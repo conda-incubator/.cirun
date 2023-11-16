@@ -5,6 +5,7 @@ policies:
     teams:
       - setup-miniconda
       - steering
+    pull_request: true  # default is false
 access_control:
   - resource: cirun-openstack-cpu-small
     policies:

@@ -1,0 +1,15 @@
+# Self-Hosted Github Action Runners on Openstack via Cirun.io
+# Reference: https://docs.cirun.io/reference/yaml
+runners:
+  - name: cirun-openstack-cpu-small
+    # Cloud Provider: Openstack
+    cloud: openstack
+    # Instance type refers to flavors in openstack
+    instance_type: ci_small
+    # The machine image to use for creating VM
+    machine_image: ubuntu-2204-20231018
+    region: RegionOne
+    labels:
+      - linux
+      - x64
+      - cirun-openstack-cpu-small
